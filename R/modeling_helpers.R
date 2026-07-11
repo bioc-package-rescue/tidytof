@@ -2256,7 +2256,7 @@ tof_assess_model_new_data <-
 #' tof_make_roc_curve(
 #'     input_data = prediction_tibble,
 #'     truth_col = truth,
-#'     prob_cols = prediction
+#'     prob_cols = "prediction"
 #' )
 #'
 tof_make_roc_curve <- function(input_data, truth_col, prob_cols) {
