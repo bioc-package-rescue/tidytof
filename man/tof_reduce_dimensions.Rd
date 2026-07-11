@@ -57,9 +57,9 @@ tof_reduce_dimensions(tof_tibble = sim_data, method = "umap")
 
 }
 \seealso{
-Other dimensionality reduction functions: 
-\code{\link{tof_reduce_pca}()},
-\code{\link{tof_reduce_tsne}()},
-\code{\link{tof_reduce_umap}()}
+Other dimensionality reduction functions:
+\code{\link[=tof_reduce_pca]{tof_reduce_pca()}},
+\code{\link[=tof_reduce_tsne]{tof_reduce_tsne()}},
+\code{\link[=tof_reduce_umap]{tof_reduce_umap()}}
 }
 \concept{dimensionality reduction functions}

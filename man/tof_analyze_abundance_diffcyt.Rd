@@ -132,9 +132,9 @@ NULL
 
 }
 \seealso{
-Other differential abundance analysis functions: 
-\code{\link{tof_analyze_abundance}()},
-\code{\link{tof_analyze_abundance_glmm}()},
-\code{\link{tof_analyze_abundance_ttest}()}
+Other differential abundance analysis functions:
+\code{\link[=tof_analyze_abundance]{tof_analyze_abundance()}},
+\code{\link[=tof_analyze_abundance_glmm]{tof_analyze_abundance_glmm()}},
+\code{\link[=tof_analyze_abundance_ttest]{tof_analyze_abundance_ttest()}}
 }
 \concept{differential abundance analysis functions}

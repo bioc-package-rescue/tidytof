@@ -32,8 +32,8 @@ tof_set_panel(tof_tibble = tof_tibble, panel = new_panel)
 
 }
 \seealso{
-Other tof_tbl utilities: 
-\code{\link{new_tof_tibble}()},
-\code{\link{tof_get_panel}()}
+Other tof_tbl utilities:
+\code{\link[=new_tof_tibble]{new_tof_tibble()}},
+\code{\link[=tof_get_panel]{tof_get_panel()}}
 }
 \concept{tof_tbl utilities}

@@ -33,9 +33,9 @@ NULL
 
 }
 \seealso{
-Other differential expression analysis functions: 
-\code{\link{tof_analyze_expression_diffcyt}()},
-\code{\link{tof_analyze_expression_lmm}()},
-\code{\link{tof_analyze_expression_ttest}()}
+Other differential expression analysis functions:
+\code{\link[=tof_analyze_expression_diffcyt]{tof_analyze_expression_diffcyt()}},
+\code{\link[=tof_analyze_expression_lmm]{tof_analyze_expression_lmm()}},
+\code{\link[=tof_analyze_expression_ttest]{tof_analyze_expression_ttest()}}
 }
 \concept{differential expression analysis functions}

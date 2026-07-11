@@ -21,8 +21,8 @@ that are useful for CyTOF data analysis.
 Constructor for a tof_tibble.
 }
 \seealso{
-Other tof_tbl utilities: 
-\code{\link{tof_get_panel}()},
-\code{\link{tof_set_panel}()}
+Other tof_tbl utilities:
+\code{\link[=tof_get_panel]{tof_get_panel()}},
+\code{\link[=tof_set_panel]{tof_set_panel()}}
 }
 \concept{tof_tbl utilities}

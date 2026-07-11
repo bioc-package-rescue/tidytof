@@ -611,11 +611,13 @@ tof_metacluster_consensus <-
 #'     clustering_algorithm = "consensus"
 #' )
 #'
+#' \donttest{
 #' tof_metacluster_flowsom(
 #'     tof_tibble = sim_data,
 #'     cluster_col = cluster_id,
 #'     clustering_algorithm = "som"
 #' )
+#' }
 #'
 tof_metacluster_flowsom <-
     function(

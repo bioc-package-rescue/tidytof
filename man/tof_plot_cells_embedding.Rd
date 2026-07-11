@@ -99,8 +99,8 @@ tsne_plot <-
 
 }
 \seealso{
-Other visualization functions: 
-\code{\link{tof_plot_cells_layout}()},
-\code{\link{tof_plot_cells_scatter}()}
+Other visualization functions:
+\code{\link[=tof_plot_cells_layout]{tof_plot_cells_layout()}},
+\code{\link[=tof_plot_cells_scatter]{tof_plot_cells_scatter()}}
 }
 \concept{visualization functions}

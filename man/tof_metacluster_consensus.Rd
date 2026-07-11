@@ -95,11 +95,11 @@ tof_metacluster_consensus(tof_tibble = sim_data, cluster_col = cluster_id)
 
 }
 \seealso{
-Other metaclustering functions: 
-\code{\link{tof_metacluster}()},
-\code{\link{tof_metacluster_flowsom}()},
-\code{\link{tof_metacluster_hierarchical}()},
-\code{\link{tof_metacluster_kmeans}()},
-\code{\link{tof_metacluster_phenograph}()}
+Other metaclustering functions:
+\code{\link[=tof_metacluster]{tof_metacluster()}},
+\code{\link[=tof_metacluster_flowsom]{tof_metacluster_flowsom()}},
+\code{\link[=tof_metacluster_hierarchical]{tof_metacluster_hierarchical()}},
+\code{\link[=tof_metacluster_kmeans]{tof_metacluster_kmeans()}},
+\code{\link[=tof_metacluster_phenograph]{tof_metacluster_phenograph()}}
 }
 \concept{metaclustering functions}

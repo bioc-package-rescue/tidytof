@@ -24,8 +24,8 @@ tof_get_panel(tof_tibble)
 
 }
 \seealso{
-Other tof_tbl utilities: 
-\code{\link{new_tof_tibble}()},
-\code{\link{tof_set_panel}()}
+Other tof_tbl utilities:
+\code{\link[=new_tof_tibble]{new_tof_tibble()}},
+\code{\link[=tof_set_panel]{tof_set_panel()}}
 }
 \concept{tof_tbl utilities}
