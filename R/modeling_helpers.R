@@ -2271,7 +2271,7 @@ tof_make_roc_curve <- function(input_data, truth_col, prob_cols) {
             dplyr::mutate(
                 truth = dplyr::pull(input_data, {{ truth_col }})
             ) |>
-            yardstick::roc_curve({{ prob_cols }}, truth = "truth", event_level = "second") |>
+            yardstick::roc_curve(truth = "truth", {{ prob_cols }}, event_level = "second") |>
             dplyr::mutate(
                 tpr = .data$sensitivity,
                 fpr = 1 - .data$specificity
