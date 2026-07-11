@@ -2074,7 +2074,13 @@ tof_assess_model_new_data <-
                 ) |>
                 dplyr::rename_with(
                     cols = dplyr::everything(),
-                    .fn = ~ gsub(pattern = ".pred_", x = .x, replacement = "")
+                    .fn = ~ {
+                        # Remove '.pred_' prefix
+                        names_clean <- gsub(pattern = "^\\.pred_", x = .x, replacement = "")
+                        # Remove '.s=...' suffix if present
+                        names_clean <- gsub(pattern = "\\.s=[0-9\\.]+$", x = names_clean, replacement = "")
+                        names_clean
+                    }
                 )
             prediction_colnames <- colnames(predictions)
 
