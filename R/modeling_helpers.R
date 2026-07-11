@@ -1892,7 +1892,7 @@ tof_assess_model_tuning <-
                     num_observations = .data$n
                 )
         } else if (model_type == "multiclass") {
-            outcome_levels <- unique(tuning_data$truth)
+            outcome_levels <- as.character(unique(tuning_data$truth))
 
             prediction_colnames <- paste0("prob_", outcome_levels)
 
@@ -2099,7 +2099,7 @@ tof_assess_model_new_data <-
                 ) |>
                 dplyr::bind_cols(predictions)
 
-            outcome_levels <- unique(new_data[[outcome_colnames]])
+            outcome_levels <- as.character(unique(new_data[[outcome_colnames]]))
 
             roc_curve <-
                 tof_make_roc_curve(
