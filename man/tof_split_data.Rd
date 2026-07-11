@@ -103,10 +103,10 @@ tof_split_data(
 
 }
 \seealso{
-Other modeling functions:
-\code{\link[=tof_assess_model]{tof_assess_model()}},
-\code{\link[=tof_create_grid]{tof_create_grid()}},
-\code{\link[=tof_predict]{tof_predict()}},
-\code{\link[=tof_train_model]{tof_train_model()}}
+Other modeling functions: 
+\code{\link{tof_assess_model}()},
+\code{\link{tof_create_grid}()},
+\code{\link{tof_predict}()},
+\code{\link{tof_train_model}()}
 }
 \concept{modeling functions}

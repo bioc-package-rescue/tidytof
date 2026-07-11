@@ -33,9 +33,9 @@ it contains into .csv files within the directory located at `out_path`. The
 should be broken into separate .csv files
 }
 \seealso{
-Other input/output functions:
-\code{\link[=tof_read_data]{tof_read_data()}},
-\code{\link[=tof_write_data]{tof_write_data()}},
-\code{\link[=tof_write_fcs]{tof_write_fcs()}}
+Other input/output functions: 
+\code{\link{tof_read_data}()},
+\code{\link{tof_write_data}()},
+\code{\link{tof_write_fcs}()}
 }
 \concept{input/output functions}

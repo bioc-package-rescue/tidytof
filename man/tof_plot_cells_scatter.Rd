@@ -63,8 +63,8 @@ sim_data <-
 
 }
 \seealso{
-Other visualization functions:
-\code{\link[=tof_plot_cells_embedding]{tof_plot_cells_embedding()}},
-\code{\link[=tof_plot_cells_layout]{tof_plot_cells_layout()}}
+Other visualization functions: 
+\code{\link{tof_plot_cells_embedding}()},
+\code{\link{tof_plot_cells_layout}()}
 }
 \concept{visualization functions}

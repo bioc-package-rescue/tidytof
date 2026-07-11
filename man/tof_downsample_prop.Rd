@@ -51,9 +51,9 @@ tof_downsample_prop(
 
 }
 \seealso{
-Other downsampling functions:
-\code{\link[=tof_downsample]{tof_downsample()}},
-\code{\link[=tof_downsample_constant]{tof_downsample_constant()}},
-\code{\link[=tof_downsample_density]{tof_downsample_density()}}
+Other downsampling functions: 
+\code{\link{tof_downsample}()},
+\code{\link{tof_downsample_constant}()},
+\code{\link{tof_downsample_density}()}
 }
 \concept{downsampling functions}

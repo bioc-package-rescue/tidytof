@@ -103,10 +103,10 @@ tof_cluster_ddpr(
 
 }
 \seealso{
-Other clustering functions:
-\code{\link[=tof_cluster]{tof_cluster()}},
-\code{\link[=tof_cluster_flowsom]{tof_cluster_flowsom()}},
-\code{\link[=tof_cluster_kmeans]{tof_cluster_kmeans()}},
-\code{\link[=tof_cluster_phenograph]{tof_cluster_phenograph()}}
+Other clustering functions: 
+\code{\link{tof_cluster}()},
+\code{\link{tof_cluster_flowsom}()},
+\code{\link{tof_cluster_kmeans}()},
+\code{\link{tof_cluster_phenograph}()}
 }
 \concept{clustering functions}

@@ -77,9 +77,9 @@ recipes::bake(pca_recipe, new_data = new_data)
 
 }
 \seealso{
-Other dimensionality reduction functions:
-\code{\link[=tof_reduce_dimensions]{tof_reduce_dimensions()}},
-\code{\link[=tof_reduce_tsne]{tof_reduce_tsne()}},
-\code{\link[=tof_reduce_umap]{tof_reduce_umap()}}
+Other dimensionality reduction functions: 
+\code{\link{tof_reduce_dimensions}()},
+\code{\link{tof_reduce_tsne}()},
+\code{\link{tof_reduce_umap}()}
 }
 \concept{dimensionality reduction functions}

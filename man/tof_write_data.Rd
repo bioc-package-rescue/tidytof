@@ -42,9 +42,9 @@ NULL
 
 }
 \seealso{
-Other input/output functions:
-\code{\link[=tof_read_data]{tof_read_data()}},
-\code{\link[=tof_write_csv]{tof_write_csv()}},
-\code{\link[=tof_write_fcs]{tof_write_fcs()}}
+Other input/output functions: 
+\code{\link{tof_read_data}()},
+\code{\link{tof_write_csv}()},
+\code{\link{tof_write_fcs}()}
 }
 \concept{input/output functions}

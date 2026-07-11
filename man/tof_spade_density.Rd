@@ -90,8 +90,8 @@ tof_spade_density(
 
 }
 \seealso{
-Other local density estimation functions:
-\code{\link[=tof_estimate_density]{tof_estimate_density()}},
-\code{\link[=tof_knn_density]{tof_knn_density()}}
+Other local density estimation functions: 
+\code{\link{tof_estimate_density}()},
+\code{\link{tof_knn_density}()}
 }
 \concept{local density estimation functions}

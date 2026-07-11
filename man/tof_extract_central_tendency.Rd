@@ -97,11 +97,11 @@ tof_extract_central_tendency(
 
 }
 \seealso{
-Other feature extraction functions:
-\code{\link[=tof_extract_emd]{tof_extract_emd()}},
-\code{\link[=tof_extract_features]{tof_extract_features()}},
-\code{\link[=tof_extract_jsd]{tof_extract_jsd()}},
-\code{\link[=tof_extract_proportion]{tof_extract_proportion()}},
-\code{\link[=tof_extract_threshold]{tof_extract_threshold()}}
+Other feature extraction functions: 
+\code{\link{tof_extract_emd}()},
+\code{\link{tof_extract_features}()},
+\code{\link{tof_extract_jsd}()},
+\code{\link{tof_extract_proportion}()},
+\code{\link{tof_extract_threshold}()}
 }
 \concept{feature extraction functions}

@@ -18,15 +18,22 @@
 \alias{all_of}
 \title{Objects exported from other packages}
 \keyword{internal}
+\value{
+See documentation in each object's original package.
+}
+\examples{
+# See examples in each object's original package
+NULL
+}
 \description{
 These objects are imported from other packages. Follow the links
 below to see their documentation.
 
 \describe{
-  \item{dplyr}{\code{\link[dplyr:\%>\%]{\%>\%}}}
+  \item{dplyr}{\code{\link[dplyr:reexports]{\%>\%}}}
 
-  \item{rlang}{\code{\link[rlang::=]{:=()}}, \code{\link[rlang:.data]{.data}}}
+  \item{rlang}{\code{\link[rlang:dyn-dots]{:=}}, \code{\link[rlang:dot-data]{.data}}}
 
-  \item{tidyselect}{\code{\link[tidyselect:all_of]{all_of()}}, \code{\link[tidyselect:any_of]{any_of()}}, \code{\link[tidyselect:contains]{contains()}}, \code{\link[tidyselect:ends_with]{ends_with()}}, \code{\link[tidyselect:everything]{everything()}}, \code{\link[tidyselect:last_col]{last_col()}}, \code{\link[tidyselect:matches]{matches()}}, \code{\link[tidyselect:num_range]{num_range()}}, \code{\link[tidyselect:starts_with]{starts_with()}}}
+  \item{tidyselect}{\code{\link[tidyselect]{all_of}}, \code{\link[tidyselect:all_of]{any_of}}, \code{\link[tidyselect:starts_with]{contains}}, \code{\link[tidyselect:starts_with]{ends_with}}, \code{\link[tidyselect]{everything}}, \code{\link[tidyselect:everything]{last_col}}, \code{\link[tidyselect:starts_with]{matches}}, \code{\link[tidyselect:starts_with]{num_range}}, \code{\link[tidyselect]{starts_with}}}
 }}
 

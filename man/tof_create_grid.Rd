@@ -50,10 +50,10 @@ tof_create_grid(penalty_values = c(0.01, 0.1, 0.5))
 
 }
 \seealso{
-Other modeling functions:
-\code{\link[=tof_assess_model]{tof_assess_model()}},
-\code{\link[=tof_predict]{tof_predict()}},
-\code{\link[=tof_split_data]{tof_split_data()}},
-\code{\link[=tof_train_model]{tof_train_model()}}
+Other modeling functions: 
+\code{\link{tof_assess_model}()},
+\code{\link{tof_predict}()},
+\code{\link{tof_split_data}()},
+\code{\link{tof_train_model}()}
 }
 \concept{modeling functions}

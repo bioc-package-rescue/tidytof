@@ -68,9 +68,9 @@ tof_reduce_tsne(tof_tibble = sim_data, tsne_cols = c(cd34, cd38))
 
 }
 \seealso{
-Other dimensionality reduction functions:
-\code{\link[=tof_reduce_dimensions]{tof_reduce_dimensions()}},
-\code{\link[=tof_reduce_pca]{tof_reduce_pca()}},
-\code{\link[=tof_reduce_umap]{tof_reduce_umap()}}
+Other dimensionality reduction functions: 
+\code{\link{tof_reduce_dimensions}()},
+\code{\link{tof_reduce_pca}()},
+\code{\link{tof_reduce_umap}()}
 }
 \concept{dimensionality reduction functions}

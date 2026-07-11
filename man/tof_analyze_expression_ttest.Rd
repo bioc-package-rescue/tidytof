@@ -110,9 +110,9 @@ NULL
 
 }
 \seealso{
-Other differential expression analysis functions:
-\code{\link[=tof_analyze_expression]{tof_analyze_expression()}},
-\code{\link[=tof_analyze_expression_diffcyt]{tof_analyze_expression_diffcyt()}},
-\code{\link[=tof_analyze_expression_lmm]{tof_analyze_expression_lmm()}}
+Other differential expression analysis functions: 
+\code{\link{tof_analyze_expression}()},
+\code{\link{tof_analyze_expression_diffcyt}()},
+\code{\link{tof_analyze_expression_lmm}()}
 }
 \concept{differential expression analysis functions}

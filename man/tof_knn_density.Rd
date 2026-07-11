@@ -52,8 +52,8 @@ neighbors to estimate local density of each cell in a
 `tof_tbl` or `tibble` containing high-dimensional cytometry data.
 }
 \seealso{
-Other local density estimation functions:
-\code{\link[=tof_estimate_density]{tof_estimate_density()}},
-\code{\link[=tof_spade_density]{tof_spade_density()}}
+Other local density estimation functions: 
+\code{\link{tof_estimate_density}()},
+\code{\link{tof_spade_density}()}
 }
 \concept{local density estimation functions}
