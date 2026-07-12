@@ -1919,7 +1919,7 @@ tof_assess_model_tuning <-
                 ) |>
                 tof_make_roc_curve(
                     truth_col = "truth",
-                    prob_cols = dplyr::any_of(outcome_levels)
+                    prob_cols = outcome_levels
                 )
         } else {
             roc_curve <- NULL
@@ -2074,7 +2074,13 @@ tof_assess_model_new_data <-
                 ) |>
                 dplyr::rename_with(
                     cols = dplyr::everything(),
-                    .fn = ~ gsub(pattern = ".pred_", x = .x, replacement = "")
+                    .fn = ~ {
+                        # Remove '.pred_' prefix
+                        names_clean <- gsub(pattern = "^\\.pred_", x = .x, replacement = "")
+                        # Remove '.s=...' suffix if present
+                        names_clean <- gsub(pattern = "\\.s=[0-9\\.]+$", x = names_clean, replacement = "")
+                        names_clean
+                    }
                 )
             prediction_colnames <- colnames(predictions)
 
@@ -2105,7 +2111,7 @@ tof_assess_model_new_data <-
                 tof_make_roc_curve(
                     input_data = roc_tibble,
                     truth_col = "truth",
-                    prob_cols = dplyr::any_of(outcome_levels)
+                    prob_cols = outcome_levels
                 )
         } else {
             roc_curve <- NULL
@@ -2250,7 +2256,7 @@ tof_assess_model_new_data <-
 #' tof_make_roc_curve(
 #'     input_data = prediction_tibble,
 #'     truth_col = truth,
-#'     prob_cols = prediction
+#'     prob_cols = "prediction"
 #' )
 #'
 tof_make_roc_curve <- function(input_data, truth_col, prob_cols) {
@@ -2262,7 +2268,7 @@ tof_make_roc_curve <- function(input_data, truth_col, prob_cols) {
 
     num_prob_cols <-
         input_data |>
-        dplyr::select({{ prob_cols }}) |>
+        dplyr::select(dplyr::any_of(prob_cols)) |>
         ncol()
 
     if (length(outcome_levels) >= 2) {
@@ -2271,7 +2277,7 @@ tof_make_roc_curve <- function(input_data, truth_col, prob_cols) {
             dplyr::mutate(
                 truth = dplyr::pull(input_data, {{ truth_col }})
             ) |>
-            yardstick::roc_curve({{ prob_cols }}, truth = "truth", event_level = "second") |>
+            yardstick::roc_curve(truth = "truth", dplyr::any_of(prob_cols), event_level = "second") |>
             dplyr::mutate(
                 tpr = .data$sensitivity,
                 fpr = 1 - .data$specificity

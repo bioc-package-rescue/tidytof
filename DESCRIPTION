@@ -85,7 +85,6 @@ Suggests:
 Config/testthat/edition: 3
 Encoding: UTF-8
 LazyData: false
-RoxygenNote: 7.3.1
 LinkingTo: 
     Rcpp
 URL: https://keyes-timothy.github.io/tidytof, https://keyes-timothy.github.io/tidytof/
@@ -93,3 +92,4 @@ BugReports: https://github.com/keyes-timothy/tidytof/issues
 VignetteBuilder: knitr
 Language: en-US
 biocViews: SingleCell, FlowCytometry
+Config/roxygen2/version: 8.0.0
