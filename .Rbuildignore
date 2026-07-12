@@ -15,3 +15,5 @@
 ^dev$
 ^\.git/
 \.Rproj\.user/
+^tests/spelling\.R$
+^tests/spelling\.Rout\.save$

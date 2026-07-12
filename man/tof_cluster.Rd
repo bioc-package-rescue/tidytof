@@ -59,10 +59,10 @@ tof_cluster(tof_tibble = sim_data, method = "phenograph")
 
 }
 \seealso{
-Other clustering functions: 
-\code{\link{tof_cluster_ddpr}()},
-\code{\link{tof_cluster_flowsom}()},
-\code{\link{tof_cluster_kmeans}()},
-\code{\link{tof_cluster_phenograph}()}
+Other clustering functions:
+\code{\link[=tof_cluster_ddpr]{tof_cluster_ddpr()}},
+\code{\link[=tof_cluster_flowsom]{tof_cluster_flowsom()}},
+\code{\link[=tof_cluster_kmeans]{tof_cluster_kmeans()}},
+\code{\link[=tof_cluster_phenograph]{tof_cluster_phenograph()}}
 }
 \concept{clustering functions}

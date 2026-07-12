@@ -68,7 +68,7 @@ prediction_tibble <-
 tof_make_roc_curve(
     input_data = prediction_tibble,
     truth_col = truth,
-    prob_cols = prediction
+    prob_cols = "prediction"
 )
 
 }

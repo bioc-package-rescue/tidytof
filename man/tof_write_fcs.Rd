@@ -37,9 +37,9 @@ NULL
 
 }
 \seealso{
-Other input/output functions: 
-\code{\link{tof_read_data}()},
-\code{\link{tof_write_csv}()},
-\code{\link{tof_write_data}()}
+Other input/output functions:
+\code{\link[=tof_read_data]{tof_read_data()}},
+\code{\link[=tof_write_csv]{tof_write_csv()}},
+\code{\link[=tof_write_data]{tof_write_data()}}
 }
 \concept{input/output functions}

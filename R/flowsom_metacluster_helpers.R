@@ -92,7 +92,8 @@ DetermineNumberOfClusters <-
         } else {
             method <- get(method)
             res <- rep(0, max)
-            for (i in seq_len(max)) {
+            res[1] <- SSE(data, rep(1, nrow(data)))
+            for (i in 2:max) {
                 c <- method(data, k = i, ...)
                 res[i] <- SSE(data, c)
             }
