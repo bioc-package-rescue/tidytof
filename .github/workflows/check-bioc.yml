@@ -5,12 +5,31 @@ on:
     branches: [ devel, main, master, RELEASE_* ]
   pull_request:
     branches: [ devel, main, master, RELEASE_* ]
+  workflow_dispatch:
+    inputs:
+      error_on:
+        description: 'rcmdcheck error policy (never, note, warning, error)'
+        required: false
+        type: choice
+        options: ['error', 'warning', 'note', 'never']
+        default: 'error'
+      bioc_version:
+        description: 'Bioconductor container override (e.g. RELEASE_3_20, devel)'
+        required: false
+        type: string
+        default: ''
+      enable_pkgdown:
+        description: 'Enable pkgdown site build'
+        required: false
+        type: boolean
+        default: false
 
 jobs:
   check:
     uses: lwaldron/workflows/.github/workflows/bioccheck.yml@main
     with:
-      enable_pkgdown: false
-      error_on: 'error'
+      enable_pkgdown: ${{ inputs.enable_pkgdown || false }}
+      error_on: ${{ inputs.error_on || 'error' }}
+      bioc_version: ${{ inputs.bioc_version || '' }}
     secrets:
       CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
