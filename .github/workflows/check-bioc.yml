@@ -1,14 +1,16 @@
-name: R-CMD-check-bioc
+name: CI
 
 on:
   push:
-    branches:
-      - main
-      - master
-      - devel
+    branches: [ devel, main, master, RELEASE_* ]
   pull_request:
-  workflow_dispatch:
+    branches: [ devel, main, master, RELEASE_* ]
 
 jobs:
-  run-check:
-    uses: bioc-package-rescue/workflows/.github/workflows/check-bioc.yml@main
+  check:
+    uses: lwaldron/workflows/.github/workflows/bioccheck.yml@main
+    with:
+      enable_pkgdown: false
+      error_on: 'error'
+    secrets:
+      CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
